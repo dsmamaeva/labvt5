@@ -252,6 +252,13 @@ button {
   text-decoration: none;
 }
 
+.header-text-btn:active {
+  color: #6B809B;
+}
+
+
+
+
 
 .service {
   display: flex;
