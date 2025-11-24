@@ -1,0 +1,758 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1280px;
+  height: 965px;
+  margin: 0 auto;
+  background: #2a2e3a;
+  overflow: hidden;
+}
+.flex-row-fc {
+  position: relative;
+  width: 1220px;
+  height: 100px;
+  margin: 5px 0 0 30px;
+  z-index: 59;
+  overflow: visible auto;
+}
+.rectangle {
+  position: relative;
+  width: 189px;
+  height: 33px;
+  margin: 16px 0 0 1006px;
+  background: #2a2e3a;
+  z-index: 56;
+  border-radius: 40px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 92.06%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 4.23%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 57;
+}
+.rectangle-1 {
+  position: relative;
+  width: 189px;
+  height: 33px;
+  margin: 2px 0 0 1006px;
+  background: #2a2e3a;
+  z-index: 59;
+  border-radius: 40px;
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 39.68%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 30.69%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 60;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 38;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  padding: 10px 10px 10px 10px;
+  z-index: 39;
+}
+.rectangle-2 {
+  flex-shrink: 0;
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  background: #000000;
+  z-index: 40;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.frame-3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 228px;
+  position: absolute;
+  width: 1179px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  z-index: 41;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 118px;
+  height: 41px;
+  padding: 54px 10px 56px 10px;
+  z-index: 42;
+}
+.resource {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 40px;
+  z-index: 43;
+}
+.resource-5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/Cnrkr02fpT.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+}
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 438px;
+  height: 100px;
+  padding: 10px 10px 10px 10px;
+  z-index: 45;
+}
+.header-sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 41px;
+  position: relative;
+  min-width: 0;
+  height: 90px;
+  z-index: 46;
+}
+.catalog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 68px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 47;
+}
+.solutions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 71px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 48;
+}
+.service {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 57px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 49;
+}
+.about-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 43px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 50;
+}
+.contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 81px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 51;
+}
+.frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: -15px;
+  position: relative;
+  width: 146px;
+  z-index: 52;
+}
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  height: 52.5px;
+  padding: 0 0 0 0;
+  z-index: 53;
+}
+.flex-row-dd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 956px;
+  height: 140px;
+  margin: 35px 0 0 140px;
+  z-index: 1;
+}
+.contacts-9 {
+  flex-shrink: 0;
+  position: relative;
+  height: 140px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 140px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 1;
+}
+.ip-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: 453px;
+  height: 70px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  text-overflow: initial;
+  overflow: hidden;
+}
+.flex-row-edc {
+  position: relative;
+  width: 958px;
+  height: 56px;
+  margin: 60px 0 0 164px;
+  z-index: 13;
+}
+.address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 56px;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+.phone {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 56px;
+  top: 0;
+  left: 323px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+.messengers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 56px;
+  top: 0;
+  left: 726px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 13;
+}
+.flex-row-c {
+  position: relative;
+  width: 929px;
+  height: 101px;
+  margin: 4px 0 0 164px;
+  z-index: 15;
+}
+.location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 223px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  z-index: 4;
+}
+.phone-number-a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 35px;
+  top: 0;
+  left: 323px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 11;
+}
+.regroup {
+  position: absolute;
+  width: 203px;
+  height: 101px;
+  top: 0;
+  left: 726px;
+  z-index: 15;
+}
+.telegram-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/gfWHJ9HS6V.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 14;
+}
+.whatsapp-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 133px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/dd0UAAEDcP.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.email-b {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 56px;
+  top: 45px;
+  left: 323px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.email-input {
+  display: block;
+  position: relative;
+  height: 35px;
+  margin: 4px 0 0 487px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.frame-c {
+  position: relative;
+  width: 1280px;
+  height: 375px;
+  margin: 50px 0 0 0;
+  background: #2a2e3a;
+  z-index: 16;
+  overflow: hidden;
+}
+.component {
+  position: absolute;
+  width: 1280px;
+  height: 375px;
+  top: 0;
+  left: 0;
+  z-index: 17;
+}
+.texture {
+  position: absolute;
+  width: 99.61%;
+  height: 717px;
+  top: -86px;
+  left: 0.39%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/ACJZdgA6hX.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+.rectangle-d {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  z-index: 18;
+}
+.rectangle-e {
+  position: absolute;
+  width: 1280px;
+  height: 153px;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/rz9LyJJdB5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+}
+.question-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 21.02%;
+  height: 14.93%;
+  top: 5.07%;
+  left: 39.53%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 21;
+}
+.consultation-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 655px;
+  height: 11.2%;
+  top: 20%;
+  left: 23.44%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  z-index: 22;
+}
+.group {
+  position: absolute;
+  width: 62.5%;
+  height: 58.13%;
+  top: 32.53%;
+  left: 18.75%;
+  z-index: 23;
+}
+.group-f {
+  position: relative;
+  width: 280px;
+  height: 51px;
+  margin: 10px 0 0 10px;
+  font-size: 0px;
+  z-index: 26;
+  overflow: visible auto;
+}
+.name-input {
+  display: block;
+  position: relative;
+  height: 21px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 27;
+}
+.rectangle-10 {
+  position: relative;
+  width: 280px;
+  height: 30px;
+  margin: 0 0 0 0;
+  background: rgba(217, 217, 217, 0.07);
+  border: 0.1px solid #2a2e3a;
+  z-index: 28;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.group-11 {
+  position: relative;
+  width: 780px;
+  height: 85px;
+  margin: 5px 0 0 10px;
+  font-size: 0px;
+  z-index: 29;
+  overflow: visible auto;
+}
+.your-question {
+  display: block;
+  position: relative;
+  height: 21px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 30;
+}
+.rectangle-12 {
+  position: relative;
+  width: 780px;
+  height: 64px;
+  margin: 0 0 0 0;
+  background: rgba(217, 217, 217, 0.07);
+  border: 0.1px solid #2a2e3a;
+  z-index: 31;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.rectangle-13 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 24;
+  box-shadow: 4px 4px 10px 0 rgba(255, 255, 255, 0.25);
+}
+.rectangle-14 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+  z-index: 25;
+  box-shadow: 4px 4px 10px 0 rgba(255, 255, 255, 0.25);
+}
+.group-15 {
+  position: absolute;
+  width: 37.5%;
+  height: 13.6%;
+  top: 35.2%;
+  left: 42.97%;
+  font-size: 0px;
+  z-index: 32;
+}
+.phone-number-16 {
+  display: block;
+  position: relative;
+  height: 21px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 33;
+}
+.rectangle-17 {
+  position: relative;
+  width: 480px;
+  height: 30px;
+  margin: 0 0 0 0;
+  background: rgba(217, 217, 217, 0.07);
+  border: 0.1px solid #2a2e3a;
+  z-index: 34;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.rectangle-18 {
+  position: absolute;
+  width: 60.94%;
+  height: 10.67%;
+  top: 74.67%;
+  left: 19.53%;
+  background: #2a2e3a;
+  z-index: 35;
+  border-radius: 30px;
+}
+.ask-question {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 5.6%;
+  top: 77.07%;
+  left: 47.11%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 36;
+}
