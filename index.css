@@ -217,9 +217,7 @@ button {
   white-space: nowrap;
   z-index: 107;
 }
-
-
-.header-text-btn {
+.solutions {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -236,30 +234,7 @@ button {
   text-align: center;
   white-space: nowrap;
   z-index: 108;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0 16px;
-  cursor: pointer;
-  text-decoration: underline;
-  transition: color 0.2s;
 }
-
-.header-text-btn:hover,
-.header-text-btn:focus {
-  color: #3a4050;
-  text-decoration: none;
-}
-
-.header-text-btn:active {
-  color: #6B809B;
-}
-
-
-
-
-
-
 .service {
   display: flex;
   align-items: flex-start;
@@ -1551,16 +1526,3 @@ button {
   white-space: nowrap;
   z-index: 55;
 }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
