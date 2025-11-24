@@ -1,0 +1,501 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1280px;
+  height: 855px;
+  margin: 0 auto;
+  background: #2a2e3a;
+  overflow: hidden;
+}
+.rectangle-one {
+  position: relative;
+  width: 1200px;
+  height: 460px;
+  margin: 95px 0 0 40px;
+  background: #000000;
+  z-index: 1;
+  overflow: visible auto;
+}
+.rectangle-two {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  margin: 20px 0 0 100px;
+  background: #2a2e3a;
+  z-index: 4;
+}
+.lab-ovens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 42.5%;
+  top: 28.75%;
+  left: 6%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.group {
+  position: absolute;
+  width: 8.33%;
+  height: 25px;
+  top: 28px;
+  left: 86%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/jpeDRfpH4n.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+.rectangle-three {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  margin: 30px 0 0 100px;
+  background: #2a2e3a;
+  z-index: 8;
+}
+.rectangle-four {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2a2e3a;
+  z-index: 9;
+}
+.industrial-ovens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 42.5%;
+  top: 28.75%;
+  left: 6%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 11;
+}
+.group-1 {
+  position: absolute;
+  width: 8.33%;
+  height: 25px;
+  top: 28px;
+  left: 86%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/SipJBNTkWu.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 10;
+}
+.rectangle {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  margin: 30px 0 0 100px;
+  background: #2a2e3a;
+  z-index: 13;
+}
+.rectangle-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2a2e3a;
+  z-index: 14;
+}
+.tunnel-ovens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 42.5%;
+  top: 28.75%;
+  left: 6%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+.group-3 {
+  position: absolute;
+  width: 8.33%;
+  height: 25px;
+  top: 28px;
+  left: 86%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/NpC9zuqRNd.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.rectangle-4 {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  margin: 30px 0 0 100px;
+  background: #2a2e3a;
+  z-index: 18;
+}
+.rectangle-5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2a2e3a;
+  z-index: 19;
+}
+.high-temperature-ovens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 42.5%;
+  top: 28.75%;
+  left: 6%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 21;
+}
+.group-6 {
+  position: absolute;
+  width: 8.33%;
+  height: 25px;
+  top: 28px;
+  left: 86%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/fFubWSkgQq.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+}
+.rectangle-7 {
+  position: relative;
+  width: 1199px;
+  height: 305px;
+  margin: 0 0 0 41px;
+  background: rgba(217, 217, 217, 0.07);
+  z-index: 2;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 95.31%;
+  height: 11.7%;
+  top: 0.58%;
+  left: 2.34%;
+  z-index: 23;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  padding: 10px 10px 10px 10px;
+  z-index: 24;
+}
+.rectangle-8 {
+  flex-shrink: 0;
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  background: #000000;
+  z-index: 25;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.frame-9 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 228px;
+  position: absolute;
+  width: 1179px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  z-index: 26;
+}
+.frame-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 118px;
+  height: 41px;
+  padding: 54px 10px 56px 10px;
+  z-index: 27;
+}
+.resource {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 40px;
+  z-index: 28;
+}
+.resource-b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-24/R7fw8syANk.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 29;
+}
+.frame-c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 438px;
+  height: 100px;
+  padding: 10px 10px 10px 10px;
+  z-index: 30;
+}
+.header-sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 41px;
+  position: relative;
+  min-width: 0;
+  height: 90px;
+  z-index: 31;
+}
+.catalog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 68px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 32;
+}
+.solutions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 71px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 33;
+}
+.service {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 57px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 34;
+}
+.about-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 43px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 35;
+}
+.contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 81px;
+  height: 34px;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 36;
+}
+.frame-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: -15px;
+  position: relative;
+  width: 146px;
+  z-index: 37;
+}
+.frame-e {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  height: 52.5px;
+  padding: 0 0 0 0;
+  z-index: 38;
+}
+.rectangle-f {
+  position: absolute;
+  width: 14.77%;
+  height: 3.86%;
+  top: 2.46%;
+  left: 80.94%;
+  background: #2a2e3a;
+  z-index: 41;
+  border-radius: 40px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 92.06%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 4.23%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 42;
+}
+.rectangle-10 {
+  position: absolute;
+  width: 14.77%;
+  height: 3.86%;
+  top: 6.55%;
+  left: 80.94%;
+  background: #2a2e3a;
+  z-index: 44;
+  border-radius: 40px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 39.68%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 30.69%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 45;
+}
