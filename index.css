@@ -217,7 +217,10 @@ button {
   white-space: nowrap;
   z-index: 107;
 }
-.solutions {
+
+
+
+.header-text-btn {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -234,7 +237,22 @@ button {
   text-align: center;
   white-space: nowrap;
   z-index: 108;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
 }
+
+.header-text-btn:hover,
+.header-text-btn:focus {
+  color: #3a4050;
+  text-decoration: none;
+}
+
+
 .service {
   display: flex;
   align-items: flex-start;
