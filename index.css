@@ -1,3 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: var(--default-font-family);
+  background: #2a2e3a;
+}
+
 :root {
   --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
@@ -6,7 +17,13 @@
 }
 
 .main-container {
-  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #2a2e3a;
+  overflow-x: hidden;
 }
 
 .main-container,
@@ -23,24 +40,79 @@ button {
 
 .main-container {
   position: relative;
-  width: 1280px;
-  height: 3199px;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
   background: #2a2e3a;
-  overflow: hidden;
+  overflow-x: hidden;
 }
-.flex-row-d {
+.flex-row-ee {
   position: relative;
   width: 1220px;
   height: 100px;
   margin: 5px 0 0 30px;
-  z-index: 109;
+  z-index: 119;
+  overflow: visible auto;
 }
-.frame {
+.rectangle {
+  position: relative;
+  width: 189px;
+  height: 33px;
+  margin: 16px 0 0 1006px;
+  background: #2a2e3a;
+  z-index: 116;
+  border-radius: 40px;
+}
+.email {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  width: 92.06%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 4.23%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 117;
+}
+.rectangle-1 {
+  position: relative;
+  width: 189px;
+  height: 33px;
+  margin: 2px 0 0 1006px;
+  background: #2a2e3a;
+  z-index: 119;
+  border-radius: 40px;
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 39.68%;
+  height: 63.64%;
+  top: 18.18%;
+  left: 30.69%;
+  color: #ffffff;
+  font-family: Bebas Neue Cyrillic, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 120;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex-wrap: nowrap;
   gap: 10px;
   position: absolute;
@@ -48,142 +120,102 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  padding: 10px 10px 10px 10px;
   z-index: 98;
 }
-.rectangle {
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  min-width: 0;
-  height: 80px;
-  background: #000000;
-  z-index: 99;
-}
-.frame-1 {
+.frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  padding: 10px 10px 10px 10px;
+  z-index: 99;
+}
+.rectangle-2 {
+  flex-shrink: 0;
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  background: #000000;
+  z-index: 100;
+  backdrop-filter: blur(1.28px);
+  box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
+}
+.frame-3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 228px;
+  position: absolute;
+  width: 1179px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  flex-shrink: 0;
   gap: 10px;
-  position: absolute;
-  width: 12.13%;
-  height: 72%;
-  top: 14%;
-  left: 1.31%;
-  padding: 10px 10px 10px 10px;
-  z-index: 107;
+  position: relative;
+  width: 118px;
+  height: 41px;
+  padding: 54px 10px 56px 10px;
+  z-index: 102;
 }
 .resource {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
   min-width: 0;
-  height: 52px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/2gv3b2x6zS.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 108;
-}
-.frame-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 6px;
-  position: absolute;
-  width: 15.49%;
-  height: 66%;
-  top: 17%;
-  left: 83.2%;
-  z-index: 100;
-}
-.group {
-  flex-shrink: 0;
-  position: relative;
-  width: 189px;
-  height: 30px;
-  font-size: 0px;
-  z-index: 101;
-  border-radius: 30px;
-}
-.email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 169px;
-  height: 15px;
-  margin: 7px 0 0 10px;
-  color: #ffffff;
-  font-family: Inter, var(--default-font-family);
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 15px;
-  text-align: center;
-  white-space: nowrap;
+  height: 40px;
   z-index: 103;
 }
-.rectangle-3 {
+.resource-5 {
   position: absolute;
-  width: 189px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  background: #2a2e3a;
-  z-index: 102;
-  border-radius: 30px;
-}
-.group-4 {
-  flex-shrink: 0;
-  position: relative;
-  width: 189px;
-  height: 30px;
-  font-size: 0px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/cnZ7oSiw5Q.png)
+    no-repeat center;
+  background-size: cover;
   z-index: 104;
-  border-radius: 30px;
-}
-.phone-number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 97px;
-  height: 15px;
-  margin: 7px 0 0 10px;
-  color: #ffffff;
-  font-family: Inter, var(--default-font-family);
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 15px;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 106;
-}
-.rectangle-5 {
-  position: absolute;
-  width: 189px;
-  height: 30px;
-  top: 0;
-  left: 0;
-  background: #2a2e3a;
-  z-index: 105;
-  border-radius: 30px;
 }
 .frame-6 {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 438px;
+  height: 100px;
+  padding: 10px 10px 10px 10px;
+  z-index: 105;
+}
+.header-sections {
+  display: flex;
   align-items: center;
   justify-content: center;
+  align-self: stretch;
   flex-wrap: nowrap;
-  gap: 40px;
-  position: absolute;
-  width: 39.34%;
-  height: 34%;
-  top: 33%;
-  left: 30.33%;
-  z-index: 109;
+  flex-shrink: 0;
+  gap: 41px;
+  position: relative;
+  min-width: 0;
+  height: 90px;
+  z-index: 106;
 }
 .catalog {
   display: flex;
@@ -201,7 +233,7 @@ button {
   line-height: 33.6px;
   text-align: center;
   white-space: nowrap;
-  z-index: 110;
+  z-index: 107;
 }
 .solutions {
   display: flex;
@@ -219,7 +251,7 @@ button {
   line-height: 33.6px;
   text-align: center;
   white-space: nowrap;
-  z-index: 111;
+  z-index: 108;
 }
 .service {
   display: flex;
@@ -237,7 +269,7 @@ button {
   line-height: 33.6px;
   text-align: center;
   white-space: nowrap;
-  z-index: 112;
+  z-index: 109;
 }
 .about-us {
   display: flex;
@@ -255,7 +287,7 @@ button {
   line-height: 33.6px;
   text-align: center;
   white-space: nowrap;
-  z-index: 113;
+  z-index: 110;
 }
 .contacts {
   display: flex;
@@ -273,7 +305,33 @@ button {
   line-height: 33.6px;
   text-align: center;
   white-space: nowrap;
-  z-index: 114;
+  z-index: 111;
+}
+.frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: -15px;
+  position: relative;
+  width: 146px;
+  z-index: 112;
+}
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  min-width: 0;
+  height: 52.5px;
+  padding: 0 0 0 0;
+  z-index: 113;
 }
 .greeting {
   display: flex;
@@ -295,31 +353,20 @@ button {
   height: 650px;
   z-index: 19;
 }
-.flex-row-d-7 {
+.flex-row-d {
   position: relative;
   width: 1200px;
   height: 325px;
   margin: 0 0 0 0;
   z-index: 40;
 }
-.promo-banner {
+.promo-block {
   position: absolute;
   width: 600px;
   height: 325px;
   top: 0;
   left: 0;
   z-index: 40;
-}
-.rectangle-8 {
-  position: absolute;
-  width: 600px;
-  height: 325px;
-  top: 0;
-  left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/fA5SLvbHGj.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 41;
 }
 .rectangle-9 {
   position: absolute;
@@ -327,7 +374,18 @@ button {
   height: 325px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/7H642m0ifa.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/Un3dn9Q6qD.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 41;
+}
+.rectangle-a {
+  position: absolute;
+  width: 600px;
+  height: 325px;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/NwKi19MyOS.png)
     no-repeat center;
   background-size: cover;
   z-index: 42;
@@ -356,12 +414,12 @@ button {
   height: 1px;
   top: 70px;
   left: 50px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/jRFfpF7moB.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/1e3sk7kSHx.png)
     no-repeat center;
   background-size: cover;
   z-index: 44;
 }
-.big-rectangle {
+.large-rectangle {
   position: absolute;
   width: 600px;
   height: 325px;
@@ -369,13 +427,13 @@ button {
   left: 600px;
   z-index: 36;
 }
-.rectangle-a {
+.rectangle-b {
   position: absolute;
   width: 600px;
   height: 325px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/ADPgCV1AoK.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/2G08430oo4.png)
     no-repeat center;
   background-size: cover;
   z-index: 37;
@@ -398,13 +456,13 @@ button {
   white-space: nowrap;
   z-index: 38;
 }
-.line-b {
+.line-c {
   position: absolute;
   width: 500px;
   height: 1px;
   top: 70px;
   left: 50px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/nUjjk1fu6H.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/sMf9uCvCaN.png)
     no-repeat center;
   background-size: cover;
   z-index: 39;
@@ -424,18 +482,18 @@ button {
   left: 0;
   z-index: 30;
 }
-.rectangle-c {
+.rectangle-d {
   position: absolute;
   width: 400px;
   height: 325px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/5RPPk1GeDa.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/K4W2zAcQAH.png)
     no-repeat center;
   background-size: cover;
   z-index: 31;
 }
-.rectangle-d {
+.rectangle-e {
   position: absolute;
   width: 400px;
   height: 325px;
@@ -444,13 +502,13 @@ button {
   background: rgba(22, 22, 22, 0.2);
   z-index: 32;
 }
-.rectangle-e {
+.rectangle-f {
   position: absolute;
   width: 210px;
   height: 325px;
   top: 0;
   left: 190px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/pndHRtopEH.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/c9MmmAZTrg.png)
     no-repeat center;
   background-size: cover;
   z-index: 33;
@@ -473,18 +531,18 @@ button {
   white-space: nowrap;
   z-index: 34;
 }
-.line-f {
+.line-10 {
   position: absolute;
   width: 266.667px;
   height: 1px;
   top: 87px;
   left: 66.667px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/owG2tZF0dF.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/6dT27kQETf.png)
     no-repeat center;
   background-size: cover;
   z-index: 35;
 }
-.square-10 {
+.square-11 {
   position: absolute;
   width: 400px;
   height: 325px;
@@ -511,28 +569,28 @@ button {
   letter-spacing: -0.75px;
   z-index: 28;
 }
-.line-11 {
+.line-12 {
   position: relative;
   width: 266.667px;
   height: 1px;
   margin: 6px 0 0 66.667px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/3QkGru6raE.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/FSMHHajiZC.png)
     no-repeat center;
   background-size: cover;
   z-index: 29;
 }
-.rectangle-12 {
+.rectangle-13 {
   position: absolute;
   width: 400px;
   height: 325px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/aguqUQmySm.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/mDTYQ1R9SS.png)
     no-repeat center;
   background-size: cover;
   z-index: 26;
 }
-.rectangle-13 {
+.rectangle-14 {
   position: absolute;
   width: 400px;
   height: 325px;
@@ -541,7 +599,7 @@ button {
   background: rgba(22, 22, 22, 0.2);
   z-index: 27;
 }
-.square-14 {
+.square-15 {
   position: absolute;
   width: 400px;
   height: 325px;
@@ -568,28 +626,28 @@ button {
   letter-spacing: -0.75px;
   z-index: 23;
 }
-.line-15 {
+.line-16 {
   position: relative;
   width: 266.667px;
   height: 1px;
   margin: 6px 0 0 66.667px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/uhaecKtH7U.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/f7i36tz8cn.png)
     no-repeat center;
   background-size: cover;
   z-index: 24;
 }
-.rectangle-16 {
+.rectangle-17 {
   position: absolute;
   width: 400px;
   height: 325px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/FtxwHNvQBm.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/p5sDjTXpS4.png)
     no-repeat center;
   background-size: cover;
   z-index: 21;
 }
-.rectangle-17 {
+.rectangle-18 {
   position: absolute;
   width: 400px;
   height: 325px;
@@ -598,28 +656,36 @@ button {
   background: rgba(22, 22, 22, 0.2);
   z-index: 22;
 }
-.firm-logo {
+.logo {
   position: relative;
   width: 1280px;
   height: 375px;
   margin: 760px 0 0 1px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/4iRuQddZzB.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/CZxmCnsi92.png)
     no-repeat center;
   background-size: cover;
   z-index: 63;
 }
-.rectangle-18 {
+.rectangle-19 {
   position: absolute;
   width: 50%;
   height: 100%;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/Cwf56AD4yq.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/SXWbeEMxbo.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 64;
 }
-.span-tag {
+
+@font-face {
+  font-family: 'Scandilover-Script';
+  src: url('https://raw.githubusercontent.com/dsmamaeva/labvt5/main/Scandilover-Script.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.span {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -628,7 +694,7 @@ button {
   top: 27px;
   left: 194px;
   color: #ffffff;
-  font-family: Scandilover Script, var(--default-font-family);
+  font-family: 'Scandilover-Script', var(--default-font-family);
   font-size: 35px;
   font-weight: 400;
   line-height: 49px;
@@ -636,7 +702,10 @@ button {
   white-space: nowrap;
   z-index: 67;
 }
-.development-russia-industry {
+
+
+
+.text-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -653,34 +722,34 @@ button {
   text-align: left;
   z-index: 66;
 }
-.rectangle-19 {
+.rectangle-1a {
   position: absolute;
   width: 50%;
   height: 100%;
   top: 0;
   left: 50%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/9jaMYOwAom.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/YjDScSHASt.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 65;
 }
-.group-1a {
+.group {
   position: relative;
   width: 1280px;
   height: 375px;
   margin: 554px 0 0 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/DtQgwQT8ta.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/ztNnGjArDy.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 69;
 }
-.firm-logo-1b {
+.logo-group {
   position: absolute;
   width: 43.91%;
   height: 375px;
   top: 0;
   left: 56.09%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/aYNz9BQp77.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/mJh4ZhF8Ma.png)
     no-repeat center;
   background-size: cover;
   z-index: 70;
@@ -725,7 +794,7 @@ button {
   white-space: nowrap;
   z-index: 75;
 }
-.implemented {
+.realized {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -776,7 +845,7 @@ button {
   white-space: nowrap;
   z-index: 73;
 }
-.frame-1c {
+.frame-1b {
   position: relative;
   width: 1280px;
   height: 375px;
@@ -799,12 +868,12 @@ button {
   height: 717px;
   top: -86px;
   left: 0.39%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/sev1cKykeE.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/1DJzHnwH4o.png)
     no-repeat center;
   background-size: cover;
   z-index: 79;
 }
-.rectangle-1d {
+.rectangle-1c {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -813,13 +882,13 @@ button {
   background: #000000;
   z-index: 78;
 }
-.rectangle-1e {
+.rectangle-1d {
   position: absolute;
   width: 1280px;
   height: 153px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/3ZwV8Az7Ju.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/Kzcn42YUP8.png)
     no-repeat center;
   background-size: cover;
   z-index: 80;
@@ -842,7 +911,7 @@ button {
   white-space: nowrap;
   z-index: 81;
 }
-.consultation-info {
+.consultation {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -859,7 +928,7 @@ button {
   text-align: center;
   z-index: 82;
 }
-.group-1f {
+.group-1e {
   position: absolute;
   width: 62.5%;
   height: 58.13%;
@@ -867,7 +936,7 @@ button {
   left: 18.75%;
   z-index: 83;
 }
-.group-20 {
+.group-1f {
   position: relative;
   width: 280px;
   height: 51px;
@@ -890,7 +959,7 @@ button {
   white-space: nowrap;
   z-index: 87;
 }
-.rectangle-21 {
+.rectangle-20 {
   position: relative;
   width: 280px;
   height: 30px;
@@ -901,7 +970,7 @@ button {
   backdrop-filter: blur(1.28px);
   box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
 }
-.group-22 {
+.group-21 {
   position: relative;
   width: 780px;
   height: 85px;
@@ -924,7 +993,7 @@ button {
   white-space: nowrap;
   z-index: 90;
 }
-.rectangle-23 {
+.rectangle-22 {
   position: relative;
   width: 780px;
   height: 64px;
@@ -935,7 +1004,7 @@ button {
   backdrop-filter: blur(1.28px);
   box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
 }
-.rectangle-24 {
+.rectangle-23 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -946,7 +1015,7 @@ button {
   z-index: 84;
   box-shadow: 4px 4px 10px 0 rgba(255, 255, 255, 0.25);
 }
-.rectangle-25 {
+.rectangle-24 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -956,7 +1025,7 @@ button {
   z-index: 85;
   box-shadow: 4px 4px 10px 0 rgba(255, 255, 255, 0.25);
 }
-.group-26 {
+.group-25 {
   position: absolute;
   width: 37.5%;
   height: 13.6%;
@@ -965,7 +1034,7 @@ button {
   font-size: 0px;
   z-index: 92;
 }
-.phone-number-27 {
+.phone-number-26 {
   display: block;
   position: relative;
   height: 21px;
@@ -979,7 +1048,7 @@ button {
   white-space: nowrap;
   z-index: 93;
 }
-.rectangle-28 {
+.rectangle-27 {
   position: relative;
   width: 480px;
   height: 30px;
@@ -990,7 +1059,7 @@ button {
   backdrop-filter: blur(1.28px);
   box-shadow: -42.667px 42.667px 42.667px 0 rgba(255, 255, 255, 0.07) inset;
 }
-.rectangle-29 {
+.rectangle-28 {
   position: absolute;
   width: 60.94%;
   height: 10.67%;
@@ -1025,46 +1094,46 @@ button {
   left: 3.91%;
   z-index: 15;
 }
-.line-2a {
+.line-29 {
   position: absolute;
   width: 2px;
   height: 539px;
   top: 0;
   left: 0px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/a5HSRQuZQq.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/eH2BCEaYAz.png)
     no-repeat center;
   background-size: cover;
   z-index: 14;
 }
-.line-2b {
+.line-2a {
   position: absolute;
   width: 5px;
   height: 86px;
   top: 32px;
   left: 0px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/sDzwe4tKPp.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/nLmdb5nfM5.png)
     no-repeat center;
   background-size: cover;
   z-index: 15;
 }
-.group-2c {
+.group-2b {
   position: absolute;
   width: 26.5%;
   height: 56.59%;
   top: 19.11%;
   left: 4%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/F4ZZqDEM3g.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/4MMFmgQJRN.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 8;
 }
-.rectangle-2d {
+.rectangle-2c {
   position: absolute;
   width: 305px;
   height: 305px;
   top: 103px;
   left: 446px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/EwkCsZxL4j.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/G4YbiwBMpK.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 10;
@@ -1075,18 +1144,18 @@ button {
   width: 155px;
   height: 155px;
   margin: 75px 0 0 76px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/spar3SQA5f.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/VLtJqqB33e.png)
     no-repeat center;
   background-size: cover;
   z-index: 17;
 }
-.rectangle-2e {
+.rectangle-2d {
   position: absolute;
   width: 305px;
   height: 305px;
   top: 103px;
   left: 846px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/f4XRzOwYw5.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/qTCk6eRoYm.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 12;
@@ -1097,7 +1166,7 @@ button {
   width: 191px;
   height: 191px;
   margin: 57px 0 0 57px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/8efuGyQvr3.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/boJ1JLROGF.png)
     no-repeat center;
   background-size: cover;
   z-index: 16;
@@ -1243,7 +1312,7 @@ button {
   z-index: 5;
   overflow: hidden;
 }
-.flex-row {
+.flex-row-fa {
   position: absolute;
   width: 30.81%;
   height: 11.16%;
@@ -1251,13 +1320,13 @@ button {
   left: 3.91%;
   z-index: 49;
 }
-.line-2f {
+.line-2e {
   position: absolute;
   width: 0.51%;
   height: 100%;
   top: 0;
   left: 0%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/C3mHC8omBA.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/CFsu04WY0S.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 48;
@@ -1279,18 +1348,18 @@ button {
   white-space: nowrap;
   z-index: 46;
 }
-.line-30 {
+.line-2f {
   position: absolute;
   width: 1.27%;
   height: 19.11%;
   top: 26.25%;
   left: 0%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/kCC0gV1Ybn.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/Y2U9LwkYbK.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 49;
 }
-.flex-row-31 {
+.flex-row-fa-30 {
   position: absolute;
   width: 90.16%;
   height: 4.19%;
@@ -1298,79 +1367,79 @@ button {
   left: 5.23%;
   z-index: 61;
 }
-.empty {
+.pic-f {
   position: absolute;
   width: 12.74%;
   height: 126px;
   top: 0;
   left: 17.42%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/ipS8YdgkHU.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/u0S0Vf7ETr.png)
     no-repeat center;
   background-size: cover;
   z-index: 56;
   border-radius: 30px;
 }
-.empty-32 {
+.img-10 {
   position: absolute;
   width: 12.65%;
   height: 126px;
   top: 0;
   left: 34.92%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/zOU5NM09Qf.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/UazOysjOfE.png)
     no-repeat center;
   background-size: cover;
   z-index: 57;
   border-radius: 30px;
 }
-.empty-33 {
+.img-11 {
   position: absolute;
   width: 12.65%;
   height: 126px;
   top: 0;
   left: 52.43%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/U3L1gQaACM.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/A5zvgDZik6.png)
     no-repeat center;
   background-size: cover;
   z-index: 61;
   border-radius: 30px;
 }
-.empty-34 {
+.img-12 {
   position: absolute;
   width: 12.65%;
   height: 90.3%;
   top: 3.36%;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/XUa3JPrwfu.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/NWbEYzx82D.png)
     no-repeat center;
   background-size: cover;
   z-index: 58;
   border-radius: 30px;
 }
-.empty-35 {
+.pic-10 {
   position: absolute;
   width: 12.65%;
   height: 126px;
   top: 8px;
   left: 69.84%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/hwxSnXHOUz.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/YSssTzJpO5.png)
     no-repeat center;
   background-size: cover;
   z-index: 60;
   border-radius: 30px;
 }
-.empty-36 {
+.img-13 {
   position: absolute;
   width: 12.65%;
   height: 126px;
   top: 8px;
   left: 87.35%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/axFBFcSCHi.png)
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-11-25/s7Qw9C42vX.png)
     no-repeat center;
   background-size: cover;
   z-index: 59;
   border-radius: 30px;
 }
-.flex-row-37 {
+.flex-row-cff {
   position: absolute;
   width: 93.75%;
   height: 2.38%;
@@ -1429,7 +1498,7 @@ button {
   white-space: nowrap;
   z-index: 52;
 }
-.aerospace-industry {
+.aerospace {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1479,4 +1548,662 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 55;
+}
+
+/* Стили для навигационных ссылок */
+.nav-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #6B809B !important;
+}
+
+/* ===== УБИРАЕМ ЛОКАЛЬНЫЕ СКРОЛЛЫ ===== */
+.flex-row-ee,
+.group-1f,
+.group-21 {
+  overflow: visible !important;
+}
+
+/* ===== ГИБКИЕ ИЗОБРАЖЕНИЯ И ФОНЫ ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rectangle-9,
+.rectangle-a,
+.rectangle-b,
+.rectangle-d,
+.rectangle-e,
+.rectangle-f,
+.rectangle-13,
+.rectangle-14,
+.rectangle-17,
+.rectangle-18 {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== ПЛАНШЕТЫ И НЕБОЛЬШИЕ НОУТБУКИ (max-width: 1024px) ===== */
+
+:root {
+  /* ===== СИСТЕМА ПЕРЕМЕННЫХ РАЗМЕРОВ ===== */
+
+  /* ШАГ СЕТКИ (базовая единица) */
+  --spacing-unit: 4px;
+  --spacing-xs: calc(var(--spacing-unit) * 1);     /* 4px */
+  --spacing-sm: calc(var(--spacing-unit) * 2);     /* 8px */
+  --spacing-md: calc(var(--spacing-unit) * 3);     /* 12px */
+  --spacing-lg: calc(var(--spacing-unit) * 4);     /* 16px */
+  --spacing-xl: calc(var(--spacing-unit) * 6);     /* 24px */
+  --spacing-2xl: calc(var(--spacing-unit) * 8);    /* 32px */
+  --spacing-3xl: calc(var(--spacing-unit) * 10);   /* 40px */
+  --spacing-4xl: calc(var(--spacing-unit) * 12);   /* 48px */
+  --spacing-5xl: calc(var(--spacing-unit) * 16);   /* 64px */
+
+  /* ТИПОГРАФИЯ */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-mono: "Courier New", monospace;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 40px;
+  --font-size-5xl: 48px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+
+  /* ЦВЕТА */
+  --color-dark-bg: #2a2e3a;
+  --color-dark-text: #ffffff;
+  --color-dark-text-secondary: #a8aab0;
+  --color-accent: #6c9fb3;
+  --color-accent-hover: #5a8fa3;
+
+  /* BORDER RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* SHADOWS */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  /* ПЕРЕХОДЫ */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* РАЗМЕРЫ КОНТЕЙНЕРОВ */
+  --container-mobile: 100%;
+  --container-tablet: 768px;
+  --container-desktop: 1024px;
+  --container-wide: 1280px;
+  --container-max: 1440px;
+
+  /* BORDER */
+  --border-width: 1px;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* === ОРИГИНАЛЬНЫЕ ПЕРЕМЕННЫЕ (СОВМЕСТИМОСТЬ) === */
+:root {
+  --default-font-family: var(--font-family-base);
+}
+
+/* ===== FLEX СИСТЕМА ===== */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 { flex: 1; }
+.flex-auto { flex: auto; }
+
+.gap-xs { gap: var(--spacing-xs); }
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+.gap-xl { gap: var(--spacing-xl); }
+
+/* ===== GRID СИСТЕМА ===== */
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* ===== SPACING УТИЛИТЫ ===== */
+.m-0 { margin: 0; }
+.m-xs { margin: var(--spacing-xs); }
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.m-lg { margin: var(--spacing-lg); }
+.m-xl { margin: var(--spacing-xl); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+
+.p-0 { padding: 0; }
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+
+.px-lg { padding-left: var(--spacing-lg); padding-right: var(--spacing-lg); }
+.py-lg { padding-top: var(--spacing-lg); padding-bottom: var(--spacing-lg); }
+
+/* ===== РАЗМЕРЫ ===== */
+.w-full { width: 100%; }
+.w-auto { width: auto; }
+.h-auto { height: auto; }
+.min-h-screen { min-height: 100vh; }
+
+.max-w-container {
+  max-width: var(--container-wide);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== ОТОБРАЖЕНИЕ ===== */
+.block { display: block; }
+.inline-block { display: inline-block; }
+.hidden { display: none; }
+
+/* ===== OVERFLOW ===== */
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-y-auto { overflow-y: auto; }
+
+/* ===== АДАПТИВНЫЙ КАТАЛОГ (GRID) ===== */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  width: 100%;
+}
+
+.catalog-item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-dark-bg);
+  border: var(--border-width) solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.catalog-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.catalog-item-content {
+  position: relative;
+  z-index: 10;
+  padding: var(--spacing-xl);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.catalog-item-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark-text);
+  margin: 0;
+  line-height: var(--line-height-tight);
+}
+
+/* DESKTOP: 4 колонки */
+@media (min-width: 1280px) {
+  .catalog-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* LAPTOP: 3 колонки */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* TABLET: 2 колонки */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE: 1 колонка */
+@media (max-width: 767px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== КАРТОЧКА ИНДУСТРИИ НА GRID ===== */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.industry-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-dark-bg);
+  border: var(--border-width) solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.industry-card:hover {
+  transform: scale(1.05);
+  border-color: var(--color-accent);
+  background: rgba(108, 159, 179, 0.05);
+}
+
+.industry-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: var(--spacing-md);
+  object-fit: contain;
+}
+
+.industry-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-dark-text);
+  line-height: var(--line-height-tight);
+}
+
+/* TABLET: 3 колонки */
+@media (max-width: 1024px) {
+  .industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE: 2 колонки */
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== ПОЧЕМУ ВЫБИРАЮТ НАС (GRID) ===== */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  width: 100%;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: rgba(108, 159, 179, 0.05);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.benefit-card:hover {
+  background: rgba(108, 159, 179, 0.1);
+  transform: translateY(-2px);
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.benefit-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark-text);
+  margin: 0;
+}
+
+.benefit-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-dark-text-secondary);
+  margin: 0;
+  line-height: var(--line-height-normal);
+}
+
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ЗАМЕНА АБСОЛЮТНОГО ПОЗИЦИОНИРОВАНИЯ ===== */
+
+/* Старый стиль: position: absolute с fixed размерами */
+/* Новый стиль: flex с относительным позиционированием */
+
+.container-relative {
+  position: relative;
+  width: 100%;
+}
+
+/* Для случаев, когда абсолютное позиционирование неизбежно */
+.absolute-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-top-right {
+  position: absolute;
+  top: var(--spacing-lg);
+  right: var(--spacing-lg);
+}
+
+.absolute-bottom-right {
+  position: absolute;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+}
+
+/* ===== ЗАМЕНА ФИКСИРОВАННЫХ РАЗМЕРОВ НА ГИБКИЕ ===== */
+
+/* Текст с фиксированной позицией в блоке → flex контейнер */
+.text-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  padding: var(--spacing-lg);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-md);
+  color: var(--color-dark-text);
+}
+
+.text-overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-xl);
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* ===== СОВРЕМЕННЫЕ АЛЬТЕРНАТИВЫ ===== */
+
+/* Вместо: position: absolute; width: 1200px; left: calc(50% - 600px) */
+.center-container {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  box-sizing: border-box;
+}
+
+/* Вместо: position: absolute; top: 100px; left: 50px */
+.positioned-block {
+  position: relative;
+  margin-top: var(--spacing-xl);
+  margin-left: var(--spacing-lg);
+}
+
+
+@media (max-width: 1024px) {
+  .rectangle-2 {
+    width: 100%;
+  }
+
+  .frame-3 {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .frame-6,
+  .frame-7 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .header-sections {
+    width: 100%;
+    height: auto;
+    gap: 24px;
+  }
+
+  .main-catalog,
+  .flex-row-d,
+  .flex-row-a {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== ТЕЛЕФОНЫ (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .flex-row-d,
+  .flex-row-a {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .promo-block,
+  .large-rectangle,
+  .square,
+  .square-11,
+  .square-15 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  .lab-ovens,
+  .service-maintenance,
+  .industrial-ovens,
+  .tunnel-ovens,
+  .high-temperature-ovens {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .catalog,
+  .solutions,
+  .service,
+  .about-us,
+  .contacts,
+  .why-choose-us,
+  .industries {
+    font-size: 20px;
+  }
+
+  .flex-row-fa-30,
+  .flex-row-cff {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .img-12,
+  .pic-f,
+  .img-10,
+  .img-11,
+  .pic-10,
+  .img-13 {
+    position: static;
+    width: calc(50% - 12px);
+    height: auto;
+  }
+
+  .ceramic-industry,
+  .chemical-industry,
+  .metallurgy,
+  .aerospace,
+  .electrical-engineering,
+  .labs-and-research {
+    position: static;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .group-1e {
+    width: 100%;
+    left: 0;
+  }
+
+  .group-1f,
+  .group-21,
+  .group-25 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .rectangle-20,
+  .rectangle-22,
+  .rectangle-27 {
+    width: 100%;
+  }
+
+  .rectangle-28 {
+    width: 100%;
+    left: 0;
+  }
+
+  .ask-question {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }
