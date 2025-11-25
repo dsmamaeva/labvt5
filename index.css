@@ -1520,13 +1520,3 @@ button {
   white-space: nowrap;
   z-index: 55;
 }
-/* Стили для навигационных ссылок */
-.nav-link {
-  text-decoration: none;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.nav-link:hover {
-  color: #6B809B !important;
-}
