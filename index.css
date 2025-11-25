@@ -662,9 +662,9 @@ button {
 
 @font-face {
   font-family: 'Scandilover Script';
-  src: url('https://github.com/dsmamaeva/labvt5/blob/main/Scandilover-Script.ttf') format('Script');
+  src: url('https://raw.githubusercontent.com/dsmamaeva/labvt5/main/Scandilover-Script.ttf') format('truetype');
   font-weight: 400;
-  font-style: Script;
+  font-style: normal;
 }
 
 .span {
@@ -684,6 +684,7 @@ button {
   white-space: nowrap;
   z-index: 67;
 }
+
 
 
 .text-content {
