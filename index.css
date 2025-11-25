@@ -660,7 +660,6 @@ button {
   z-index: 64;
 }
 
-
 @font-face {
   font-family: 'Scandilover Script';
   src: url('https://raw.githubusercontent.com/dsmamaeva/labvt5/main/Scandilover%20Script.ttf') format('truetype');
@@ -685,6 +684,7 @@ button {
   white-space: nowrap;
   z-index: 67;
 }
+
 
 .text-content {
   display: flex;
