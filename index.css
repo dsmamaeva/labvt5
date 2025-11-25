@@ -659,6 +659,15 @@ button {
   background-size: 100% 100%;
   z-index: 64;
 }
+
+
+@font-face {
+  font-family: 'Scandilover Script';
+  src: url('https://raw.githubusercontent.com/dsmamaeva/labvt5/main/Scandilover%20Script.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .span {
   display: flex;
   align-items: flex-start;
@@ -668,7 +677,7 @@ button {
   top: 27px;
   left: 194px;
   color: #ffffff;
-  font-family: Scandilover Script, var(--default-font-family);
+  font-family: 'Scandilover Script', var(--default-font-family);
   font-size: 35px;
   font-weight: 400;
   line-height: 49px;
@@ -676,6 +685,7 @@ button {
   white-space: nowrap;
   z-index: 67;
 }
+
 .text-content {
   display: flex;
   align-items: flex-start;
