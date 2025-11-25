@@ -22,13 +22,15 @@ button {
 }
 
 .main-container {
-  position: relative;
-  width: 1280px;
-  height: 3199px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   background: #2a2e3a;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
 }
+
 .flex-row-ee {
   position: relative;
   width: 1220px;
