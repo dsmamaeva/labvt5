@@ -48,7 +48,7 @@ button {
   overflow-x: hidden;
 }
 
-.flex-row-d {
+.flex-row-da {
   position: relative;
   width: 1220px;
   height: 100px;
@@ -56,7 +56,7 @@ button {
   z-index: 109;
 }
 
-.frame {
+.sframe {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ button {
 }
 
 
-.rectangle {
+.srectangle {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
@@ -83,7 +83,7 @@ button {
   z-index: 99;
 }
 
-.frame-1 {
+.sframe-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -99,7 +99,7 @@ button {
   z-index: 107;
 }
 
-.resource {
+.sresource {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
@@ -110,7 +110,7 @@ button {
   background-size: cover;
   z-index: 108;
 }
-.frame-2 {
+.sframe-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -124,7 +124,7 @@ button {
   left: 83.2%;
   z-index: 100;
 }
-.group {
+.sgroup {
   flex-shrink: 0;
   position: relative;
   width: 189px;
@@ -151,7 +151,7 @@ button {
   white-space: nowrap;
   z-index: 103;
 }
-.rectangle-3 {
+.srectangle-3 {
   position: absolute;
   width: 189px;
   height: 30px;
@@ -162,7 +162,7 @@ button {
   border-radius: 30px;
 }
 
-.group-4 {
+.sgroup-4 {
   flex-shrink: 0;
   position: relative;
   width: 189px;
@@ -188,7 +188,7 @@ button {
   white-space: nowrap;
   z-index: 106;
 }
-.rectangle-5 {
+.srectangle-5 {
   position: absolute;
   width: 189px;
   height: 30px;
